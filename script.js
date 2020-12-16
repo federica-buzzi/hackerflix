@@ -34,15 +34,14 @@ function render() {
   // fermeture popup - button still not working
 
   // document.body.addEventListener('click', (e) => {
-  // const popupCache = document.('insidePopup');
-  // if (e.target.matches('#fermerButton')) {
-  //   console.log('dommage');
-  //   popupCache.display.style = 'none';
-  // } else {
-  //   popupCache.display.style = 'none';
-  // }
+  //   const popupCache = document.getElementById('insidePopup');
+  //   if (e.target.matches('#fermerButton')) {
+  //     console.log('dommage');
+  //     popupCache.display.style = 'none';
+  //   }
 
   // seulements films après 2000
+
   // if (e.target.matches('#recentButton')) {
   //   for (let i = 0; i < movies.length; i++) {
   //     if (movies[i].year < 2000) {
@@ -55,4 +54,5 @@ function render() {
   //   }
   // });
 }
+
 render();
