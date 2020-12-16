@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+body {
+  background-color: black;
+  font-family: "Roboto";
+  color: $primary-color;
+  text-align: center;
+}
+
+img {
+  width: 300px; 
+  height: 470px;
+  border: solid white 2px;
+}
+
+#recentButton {
+  background-color: rgb(193, 51, 236);
+  border: none;
+  font-size: 16px;
+}
+
+.containerImages {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#insidePopup {
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(193, 51, 236);
+  position: fixed;
+  font-family: "Roboto";
+  color: $primary-color;
+  text-align: center;
+  padding: 2%; 
+  display: block;
+}
