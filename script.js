@@ -31,28 +31,24 @@ function render() {
     });
   }
 
-  // fermeture popup - button still not working
+  // fermeture popup
 
-  // document.body.addEventListener('click', (e) => {
-  //   const popupCache = document.getElementById('insidePopup');
-  //   if (e.target.matches('#fermerButton')) {
-  //     console.log('dommage');
-  //     popupCache.display.style = 'none';
-  //   }
+  document.body.addEventListener('click', (e) => {
+    const popupCache = document.getElementById('insidePopup');
+    if (e.target.matches('#fermerButton')) {
+      popupCache.style.display = 'none';
+    }
 
-  // seulements films après 2000
+    // seulements films après 2000
 
-  // if (e.target.matches('#recentButton')) {
-  //   for (let i = 0; i < movies.length; i++) {
-  //     if (movies[i].year < 2000) {
-  //       console.log(movies[i].title);
-  //       const x = document.querySelectorAll('.insidePopup');
-  //       console.log(x);
-  // [i].style.display = 'none';
-  //       }
-  //     }
-  //   }
-  // });
+    if (e.target.matches('#recentButton')) {
+      for (let i = 0; i < movies.length; i++) {
+        if (movies[i].year < 2000) {
+          document.querySelectorAll('img')[i].style.display = 'none';
+        }
+      }
+    }
+  });
 }
 
 render();
